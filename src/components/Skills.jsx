@@ -1,10 +1,14 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import {FaReact,FaJsSquare,FaHtml5,FaCss3Alt,FaNodeJs,FaPython,FaPhp,FaDatabase,FaJava,FaWindows,FaUbuntu,} from "react-icons/fa";
+import {FaReact,FaJsSquare,FaHtml5,FaCss3Alt,FaNodeJs,FaPython,FaPhp,FaDatabase,FaJava,FaWindows,FaUbuntu, FaLaravel,FaBootstrap,FaVuejs, FaDocker} from "react-icons/fa";
+import { DiCodeigniter } from "react-icons/di";
 import { FaGit } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
-import { SiUml, SiOracle, SiArchlinux } from "react-icons/si";
+import { SiUml, SiOracle, SiArchlinux, SiAndroidstudio  } from "react-icons/si";
 import CLogo from "../assets/img/c-logo.svg"; 
+
+
+
 
 const SkillBar = ({ level }) => {
   const { ref, inView } = useInView({
@@ -26,33 +30,31 @@ const SkillBar = ({ level }) => {
 
 const Skills = () => {
   const skills = [
-    { name: "React", icon: <FaReact />, level: 50, link: "https://reactjs.org/" },
-    { name: "JavaScript", icon: <FaJsSquare />, level: 45, link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { name: "React", icon: <FaReact />, level: 45, link: "https://reactjs.org/" },
+    { name: "Vuejs", icon: <FaVuejs />, level: 30, link: "https://vuejs.org/" },
+    { name: "JavaScript", icon: <FaJsSquare />, level: 30, link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
     { name: "Node.js", icon: <FaNodeJs />, level: 20, link: "https://nodejs.org/" },
-
-    { name: "HTML", icon: <FaHtml5 />, level: 70, link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-    { name: "CSS", icon: <FaCss3Alt />, level: 65, link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-    { name: "W3CSS", icon: <FaCss3Alt />, level: 45, link: "https://www.w3schools.com/w3css/" },
-
-    { name: "PHP", icon: <FaPhp />, level: 45, link: "https://www.php.net/" },
-    { name: "CodeIgniter", icon: <FaPhp />, level: 25, link: "https://codeigniter.com/" },
-    { name: "phpMyAdmin", icon: <FaDatabase />, level: 50, link: "https://www.phpmyadmin.net/" },
-
-    { name: "SQL", icon: <FaDatabase />, level: 50, link: "https://sql.sh/"},
-    { name: "PL/SQL", icon: <FaDatabase />, level: 25, link :"https://www.oracle.com/database/technologies/appdev/plsql.html"},
-    { name: "Oracle", icon: <SiOracle />, level: 50, link :"https://www.oracle.com/" },
-
-    { name: "Python", icon: <FaPython />, level: 55, link: "https://www.python.org/" },
-    { name: "C", icon: <img src={CLogo} alt="C Logo" style={styles.customIcon} />, level: 30, link: "https://www.learn-c.org/" },
+    { name: "HTML", icon: <FaHtml5 />, level: 55, link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { name: "CSS", icon: <FaCss3Alt />, level: 50, link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { name: "Bootstrap", icon: <FaBootstrap />, level: 45, link: "https://getbootstrap.com/" },
     { name: "Java", icon: <FaJava />, level: 40, link: "https://www.java.com/fr/" },
-
-    { name: "StarUML", icon: <SiUml />, level: 30, link: "https://staruml.io/" },
-    { name: "Git", icon: <FaGit />, level: 40, link: "https://git-scm.com/" },
+    { name: "PHP", icon: <FaPhp />, level: 35 , link: "https://www.php.net/" },
+    { name: "CodeIgniter", icon: <DiCodeigniter />, level: 15, link: "https://codeigniter.com/" },
+    { name: "Laravel", icon: <FaLaravel />, level: 40, link: "https://laravel.com/" },
+    { name: "SQL", icon: <FaDatabase />, level: 50, link: "https://sql.sh/"},
+    { name: "PL/SQL", icon: <FaDatabase />, level: 15, link :"https://www.oracle.com/database/technologies/appdev/plsql.html"},
+    { name: "Oracle", icon: <SiOracle />, level: 50, link :"https://www.oracle.com/" },
+    { name: "Python", icon: <FaPython />, level: 45, link: "https://www.python.org/" },
+    { name: "C", icon: <img src={CLogo} alt="C Logo" style={styles.customIcon} />, level: 20, link: "https://www.learn-c.org/" },
+    { name: "StarUML", icon: <SiUml />, level: 50, link: "https://staruml.io/" },
+    { name: "Git", icon: <FaGit />, level: 60, link: "https://git-scm.com/" },
     { name: "Visual Studio Code", icon: <VscVscode />, level: 85, link: "https://code.visualstudio.com/" },
-
+    { name: "Android Studio", icon: <SiAndroidstudio />, level: 50, link: "https://developer.android.com/studio?hl=fr" },
     { name: "Windows", icon: <FaWindows />, level: 70, link: "https://www.microsoft.com/fr-fr/windows" },
     { name: "ArchLinux", icon: <SiArchlinux />, level: 55, link: "https://archlinux.org/"},
     { name: "Ubuntu", icon: <FaUbuntu />, level: 50, link: "https://www.ubuntu-fr.org/"},
+    { name: "Docker", icon: <FaDocker />, level: 30, link: "https://www.docker.com/"},
+
   ];
 
   return (

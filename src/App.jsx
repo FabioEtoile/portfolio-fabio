@@ -50,7 +50,7 @@ function App() {
       </SlideInSection>
       {/* Footer */}
       <footer style={styles.footer}>
-        <p style={styles.footerText}>© 2024 Fabio Etoile | Tous droits réservés</p>
+        <p style={styles.footerText}>© 2025 Fabio Etoile | Tous droits réservés</p>
         <div style={styles.techStack}>
           <p style={styles.techText}>Réalisé avec ReactJS et ViteJS</p>
           <FaReact style={styles.techIcon} />
@@ -92,7 +92,7 @@ const styles = {
     color: "#fff",
     textAlign: "center",
     padding: "20px",
-    position: "relative", // Rend le footer non fixe
+    position: "relative", 
     bottom: 0,
     width: "100%",
   },

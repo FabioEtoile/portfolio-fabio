@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+
 
 import AppliPHPImage from "../assets/img/AppliPHP.png";
 import DorfromantikImage from "../assets/img/Dorfromantik.png";
@@ -8,13 +10,19 @@ import ProjetwebImage from "../assets/img/Projetweb.png";
 import ScilabImage from "../assets/img/Scilab.png";
 import SudokuImage from "../assets/img/Sudoku.png";
 import SnakeImage from "../assets/img/snake.png";
+import RiotappImage from "../assets/img/Riotapp.png";
+import DockerImage from "../assets/img/Docker.png";
+import FlowfreeImage from "../assets/img/Flowfree.png";
+import SpacexImage from "../assets/img/Spacex.png";
+import DemcrmImage from "../assets/img/Demcrm.png";
+
 
 const Projets = () => {
   const projects = [
     {
       title: "Snake en C",
       description:
-        "Jeu du Snake en C89 avec la bibliothèque graphique de mon Université (bibliothèque basé sur Xlib)",
+        "Jeu du Snake en C89 avec la bibliothèque graphique de mon Université (bibliothèque basé sur Xlib).",
       githubLink: "https://github.com/FabioEtoile/Snake",
       screenshot: SnakeImage,
     },
@@ -42,7 +50,7 @@ const Projets = () => {
     {
       title: "Application de Musique en PHP",
       description:
-        "Une application de gestion de musique développée en PHP et à l'aide du framework CodeIgniter",
+        "Une application de gestion de musique développée en PHP et à l'aide du framework CodeIgniter.",
       githubLink: "https://github.com/FabioEtoile/Application-Musique-PHP",
       screenshot: AppliPHPImage,
     },
@@ -60,46 +68,100 @@ const Projets = () => {
       githubLink: "https://github.com/FabioEtoile/Scilab",
       screenshot: ScilabImage,
     },
+    {
+      title: "Riot App",
+      description:
+        "Application web développée avec Riot.js, utilisant l'API Discogs pour effectuer des recherches musicales.",
+      githubLink: "https://github.com/FabioEtoile/app-Riot",
+      screenshot: RiotappImage,
+    },
+    {
+      title: "Projet Docker",
+      description:
+        "Mini Projet : Docker compose avec une application (BDD, backend CRUD, frontend).",
+      githubLink: "https://github.com/FabioEtoile/DockerProject",
+      screenshot: DockerImage,
+    },
+    {
+      title: "Projet Android",
+      description:
+        "Projet Android réalisé sur AndroidStudio. Il s'agit d'un jeu inspiré de Flow Free, développé en Java avec Android SDK.",
+      githubLink: "https://github.com/FabioEtoile/appAndroid",
+      screenshot: FlowfreeImage,
+    },
+    {
+      title: "Spacex App",
+      description:
+        "Ce projet a été réalisé dans le cadre d’un test technique pour une candidature à un stage en développement web avec Vue.js en  utilisant l’API officielle SpaceX v5.",
+      githubLink: "https://github.com/FabioEtoile/spacex-app",
+      screenshot: SpacexImage,
+    },
+    {
+      title: "CRM App",
+      description:
+        "Projet efféctué durant mon stage de 2 mois dans une startup de déménagement, mes tâches ont été de mettre en place la landing page du projet en utilisant Laravel et Bootsrap principalement.",
+      website: "https://demcrm.com",
+      screenshot: DemcrmImage,
+    },
   ];
 
-  return (
-    <section id="projects" style={styles.projects}>
-      <h2 style={styles.title}>Mes Projets</h2>
-      <div style={styles.projectsContainer}>
-        {projects.map((project, index) => (
-          <div key={index} style={styles.project}>
-            <img
-              src={project.screenshot}
-              alt={project.title}
-              style={styles.screenshot}
-            />
-            <div style={styles.projectDetails}>
-              <div style={styles.projectTitleContainer}>
-                <h3 style={styles.projectTitle}>{project.title}</h3>
-                {project.githubLink && (
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={styles.githubLink}
-                  >
-                    <FaGithub /> Voir le code source
-                  </a>
-                )}
-                {!project.githubLink && (
-                  <span style={styles.noGitHub}>Pas open-source, pour des raisons de sécurité vis-à-vis de la base de données</span>
-                )}
-              </div>
-              <p style={styles.projectDescription}>{project.description}</p>
+return (
+  <section id="projects" style={styles.projects}>
+    <h2 style={styles.title}>Mes Projets</h2>
+    <div style={styles.projectsContainer}>
+      {projects.map((project, index) => (
+        <div key={index} style={styles.project}>
+          <img
+            src={project.screenshot}
+            alt={project.title}
+            style={styles.screenshot}
+          />
+          <div style={styles.projectDetails}>
+            <div style={styles.projectTitleContainer}>
+              <h3 style={styles.projectTitle}>{project.title}</h3>
+              {(project.githubLink || project.website) && (
+                <div style={styles.links}>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={styles.githubLink}
+                    >
+                      <FaGithub /> Voir le code source
+                    </a>
+                  )}
+                  {project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={styles.githubLink}
+                    >
+                      🌐 Voir le site
+                    </a>
+                  )}
+                </div>
+              )}
+
+              {!project.githubLink && !project.website && (
+                <span style={styles.noGitHub}>
+                  Pas open-source, pour des raisons de sécurité vis-à-vis de la base de données
+                </span>
+              )}
             </div>
+            <p style={styles.projectDescription}>{project.description}</p>
           </div>
-        ))}
-      </div>
-    </section>
-  );
-};
+        </div>
+      ))}
+    </div>
+  </section>
+);
+}
 
 const styles = {
+
+  
   projects: {
     padding: "100px 20px",
     backgroundColor: "#0a192f",

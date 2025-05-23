@@ -23,7 +23,7 @@ const Hero = () => {
           en 2ème année de BUT Informatique.
         </h2>
         <p style={{ fontSize: "1.2rem", marginBottom: "30px" }}>
-          🎯 À la recherche d’un stage de 8 à 12 semaines à partir d’avril 2024.
+          Je suis à la recherche d’une alternance dans le développement web afin d’entamer ma troisième année en informatique.
         </p>
         <a
           href="#about"
