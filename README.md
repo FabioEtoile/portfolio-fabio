@@ -7,7 +7,7 @@ Consultez le portfolio en ligne : [www.fabio-etoile.fr](https://www.fabio-etoile
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 ### Développement
 
