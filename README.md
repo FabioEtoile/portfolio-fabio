@@ -1,9 +1,9 @@
 
-# Portfolio Fabio ⭐
+# Portfolio Fabio 
 
 Bienvenue dans le dépôt de mon portfolio personnel ! Ce projet met en avant mes compétences et mon parcours en utilisant des outils modernes comme **React** et **Vite**. Mon portfolio est hébergé via **GitHub Pages** et utilise un domaine personnalisé pour une présentation professionnelle.
 
-➡️ Consultez le portfolio en ligne : [www.fabio-etoile.fr](https://www.fabio-etoile.fr)
+Consultez le portfolio en ligne : [www.fabio-etoile.fr](https://www.fabio-etoile.fr)
 
 ---
 
@@ -22,7 +22,7 @@ Bienvenue dans le dépôt de mon portfolio personnel ! Ce projet met en avant me
 
 ---
 
-## 🌐 Hébergement et domaine personnalisé
+## Hébergement et domaine personnalisé
 
 ### Hébergement
 - **[GitHub Pages](https://pages.github.com/)** : Le portfolio est hébergé gratuitement sur GitHub Pages.
