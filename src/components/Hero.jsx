@@ -20,10 +20,10 @@ const Hero = () => {
         </h1>
         <h2 style={{ fontSize: "2rem", marginBottom: "20px" }}>
           Je suis <span style={{ color: "#64ffda" }}>Fabio</span>, actuellement
-          en 2ème année de BUT Informatique.
+          en 3ème année de BUT Informatique.
         </h2>
         <p style={{ fontSize: "1.2rem", marginBottom: "30px" }}>
-          Je suis à la recherche d’une alternance dans le développement web afin d’entamer ma troisième année en informatique.
+          Je suis à la recherche d’un stage dans le domaine de l’informatique, avec une spécialisation en virtualisation et automatisation, afin de valider ma troisième année.
         </p>
         <a
           href="#about"

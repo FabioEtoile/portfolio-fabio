@@ -21,12 +21,8 @@ function App() {
         <h2 style={styles.title}>À propos de moi</h2>
         <div style={styles.content}>
           <p style={styles.text}>
-            Je suis Fabio, passionné d'informatique depuis mon jeune âge. J'ai
-            pour objectif de me spécialiser dans le développement web fullstack.
-            J'ai obtenu mon baccalauréat général avec les options sciences
-            économiques et sociales, ainsi que numériques et sciences
-            informatiques. Après le bac, j'ai choisi de poursuivre mes études
-            en BUT Informatique, où je suis actuellement en 2ème année.
+        Je suis Fabio, passionné d'informatique depuis mon jeune âge. Mon objectif est de me spécialiser dans le domaine du cloud et de la virtualisation. J'ai obtenu mon baccalauréat général avec les options Sciences Économiques et Sociales ainsi que Numérique et Sciences Informatiques. Après le bac, j'ai choisi de poursuivre en BUT Informatique, où je suis actuellement en troisième année.
+
           </p>
           <p style={styles.text}>
             En dehors du développement, j’aime explorer de nouvelles
@@ -50,7 +46,7 @@ function App() {
       </SlideInSection>
       {/* Footer */}
       <footer style={styles.footer}>
-        <p style={styles.footerText}>© 2025 Fabio Etoile | Tous droits réservés</p>
+        <p style={styles.footerText}>© 2026 Fabio Etoile | Tous droits réservés</p>
         <div style={styles.techStack}>
           <p style={styles.techText}>Réalisé avec ReactJS et ViteJS</p>
           <FaReact style={styles.techIcon} />

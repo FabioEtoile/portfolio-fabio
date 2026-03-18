@@ -85,13 +85,14 @@ const Skills = () => {
 
 const styles = {
   skills: {
-    padding: "100px 20px",
+    padding: "10px 10px 10px",
     backgroundColor: "#0a192f",
     color: "#fff",
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    overflow: "hidden",
   },
   title: {
     fontSize: "2.5rem",
